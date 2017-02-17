@@ -84,3 +84,7 @@ const addHandlers = () => {
   // $('#game-log').on('click').text('You\'ve played ' + data.games.length + ' games!');
 
 };
+
+module.exports = {
+  addHandlers,
+};
