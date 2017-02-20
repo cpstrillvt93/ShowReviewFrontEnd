@@ -1,2 +1,15 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$dark-green: #236167;
+$light-green: #2c8d3d;
+$purpleish: #68979b;
+
+$main-background-color: $dark-green;
+$secondary-background: $light-green;
+$font-color: $purpleish;
+
+body {
+  background-color: $main-background-color;
+
+}
