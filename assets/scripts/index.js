@@ -14,7 +14,16 @@ $(() => {
 });
 
 // use require with a reference to bundle the file and use it in this file
+
+const showEvents = require('./../shows/events');
 // const example = require('./example');
+
+$(() => {
+  // $('#book-search').on('submit', bookEvents.onGetBooks);
+  $('#remove-show').on('submit', showEvents.onRemoveShow);
+  $('#edit-show').on('submit', showEvents.onEditShow);
+  $('#add-show').on('submit', showEvents.onAddShow);
+});
 
 // use require without a reference to ensure a file is bundled
 require('./example');

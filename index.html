@@ -44,10 +44,9 @@
         </fieldset>
       </form>
       <h1>TicketTracker</h1>
-
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <form class='add-show' id="post-book">
+<form class="shows" id="add-show">
   <div class="form-group">
     <input type="text" name="show[date]" placeholder="Add Show Date Here">
     <input type="text" name="show[band]" placeholder="Add Band Here">
@@ -55,9 +54,28 @@
     <input type="text" name="show[location]" placeholder="Add Location Here">
     <input type="number" name="show[rating]" placeholder="Add Rating Here">
     <input type="text" name="show[notes]" placeholder="Add Notes here">
+    <button type="submit" class="btn btn-default">Add Show</button>
   </div>
-  <button type="submit" class="btn btn-default">Add Book</button>
 </form>
+<form class="shows" id="remove-show">
+  <div class="form-group">
+    <input type="text" name="show[date]" placeholder="ID of show to delete">
+    <button type="submit" class="btn btn-danger">Delete Show</button>
+  </div>
+</form>
+<form class="shows" id="edit-show">
+  <div class="form-group">
+    <input type="text" name="show[date]" placeholder="Edit Show Date Here">
+    <input type="text" name="show[band]" placeholder="Edit Band Here">
+    <input type="text" name="show[venue]" placeholder="Edit Venue Here">
+    <input type="text" name="show[location]" placeholder="Edit Location Here">
+    <input type="number" name="show[rating]" placeholder="Edit Rating Here">
+    <input type="text" name="show[notes]" placeholder="Edit Notes here">
+    <button type="submit" class="btn btn-default">Edit Saved Show</button>
+  </div>
+</form>
+
+
 <table>
 	<thead>
 		<tr>
