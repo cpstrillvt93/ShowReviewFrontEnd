@@ -35,7 +35,7 @@ const onRemoveShow = function(event){
   // However prefer this way.
 
   let data = getFormFields(event.target);
-  api.removeShow(data.show.id)
+  api.removeShow(data.show.date)
     .then(ui.onRemoveSuccess)
     .catch(ui.onError);
 };

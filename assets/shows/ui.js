@@ -15,15 +15,15 @@
 // };
 
 const onRemoveSuccess = function () {
-  console.log('Book was successfully deleted.');
+  console.log('show was successfully deleted.');
 };
 
 const onEditSuccess = function () {
-  console.log('Book was successfully patched');
+  console.log('show was successfully edited');
 };
 
 const onAddSuccess = function () {
-  console.log('Book was successfully posted');
+  console.log('Show was successfully added');
 };
 
 module.exports = {
