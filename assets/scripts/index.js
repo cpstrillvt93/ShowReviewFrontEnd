@@ -19,7 +19,7 @@ const showEvents = require('./../shows/events');
 // const example = require('./example');
 
 $(() => {
-  // $('#book-search').on('submit', bookEvents.onGetBooks);
+  $('#getShowsButton').on('click', showEvents.onGetShows);
   $('#remove-show').on('submit', showEvents.onRemoveShow);
   $('#edit-show').on('submit', showEvents.onEditShow);
   $('#add-show').on('submit', showEvents.onAddShow);

@@ -10,9 +10,9 @@ const indexShow = function () {
   });
 };
 
-const displayShow = function (id) {
+const displayShow = function () {
   return $.ajax({
-    url: config.apiOrigin + '/shows/' + id,
+    url: config.apiOrigin + '/shows/',
     method: 'GET',
   });
 };

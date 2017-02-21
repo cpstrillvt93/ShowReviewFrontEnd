@@ -14,6 +14,10 @@
 //   console.error(response);
 // };
 
+const onDisplaySuccess = function (data) {
+  console.log(data.shows);
+};
+
 const onRemoveSuccess = function () {
   console.log('show was successfully deleted.');
 };
@@ -29,6 +33,7 @@ const onAddSuccess = function () {
 module.exports = {
   // onSuccess,
   // onError,
+  onDisplaySuccess,
   onRemoveSuccess,
   onEditSuccess,
   onAddSuccess,

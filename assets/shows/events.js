@@ -11,21 +11,14 @@ const getFormFields = require('../../lib/get-form-fields.js');
 // also, follow a convention for handlers. here, I name my handler
 // beginning with 'on' to denote that it is done when the GET /books
 // button is clicked
-// const onAddShow = function (event) {
-//   event.preventDefault();
-//   let data = getFormFields(event.target);
-//
-//   if (data.show.id.length === 0){
-//       api.index()
-//       .then(ui.onSuccess)
-//       .catch(ui.onError);
-//   } else {
-//     api.show(data.show.id)
-//     .then(ui.onSuccess)
-//     .catch(ui.onError);
-//   }
-//
-// };
+
+const onGetShows = (event) => {
+  event.preventDefault();
+  let data = getFormFields(event.target);
+  api.displayShow(data)
+    .then(ui.onDisplaySuccess)
+    .catch(ui.failure);
+};
 
 const onRemoveShow = function(event){
   event.preventDefault();
@@ -65,6 +58,7 @@ const onAddShow = function (event) {
 
 
 module.exports = {
+onGetShows,
 onRemoveShow,
 onEditShow,
 onAddShow
