@@ -20,6 +20,11 @@ const onGetShows = (event) => {
     .catch(ui.failure);
 };
 
+const onClearShows = (event) => {
+  event.preventDefault();
+  ui.clearShows();
+};
+
 const onRemoveShow = function(event){
   event.preventDefault();
 
@@ -56,6 +61,7 @@ const onAddShow = function (event) {
 
 const addShowHandlers = () => {
   $('#getShowsButton').on('click', onGetShows);
+  $('#clearShowsButton').on('click', onClearShows);
 
 };
 
@@ -65,6 +71,7 @@ const addShowHandlers = () => {
 module.exports = {
 addShowHandlers,
 onGetShows,
+onClearShows,
 onRemoveShow,
 onEditShow,
 onAddShow

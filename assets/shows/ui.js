@@ -18,11 +18,15 @@ const displayShowsTemplate = require('../templates/show-listing.handlebars');
 
 const onDisplaySuccess = function (data) {
   let displayShowsHtml = displayShowsTemplate({ shows: data.shows });
-
   $('.show-log-two').append(displayShowsHtml);
 };
   // console.log(data.shows);
   // $('#show-log').text('You have seen ' + data.shows.length + ' shows!');
+
+  const clearShows = () => {
+    $('.show-log-two').empty();
+  };
+
 
 const onRemoveSuccess = function (date) {
   console.log('show was successfully deleted.', date);
@@ -39,6 +43,7 @@ const onAddSuccess = function (data) {
 module.exports = {
   // onSuccess,
   // onError,
+  clearShows,
   onDisplaySuccess,
   onRemoveSuccess,
   onEditSuccess,
