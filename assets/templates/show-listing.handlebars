@@ -1,0 +1,24 @@
+{{#each shows as |show|}}
+
+  <h1 data-id="{{show.id}}">
+     <small>Date: {{show.date}}</small>
+    <small>Band: {{show.band}}</small>
+    <small>Venue: {{show.venue}}</small>
+    <small>Location: {{show.location}}</small>
+  </h1>
+  <div>
+    {{#if show.rating}}
+      {{show.rating}}
+    {{else}}
+      No rating
+    {{/if}}
+  </div>
+  <div>
+    {{#if show.notes}}
+      {{show.notes}}
+    {{else}}
+      No notes.
+    {{/if}}
+  </div>
+
+{{/each}}

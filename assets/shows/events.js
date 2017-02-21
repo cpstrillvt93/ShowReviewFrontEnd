@@ -14,8 +14,8 @@ const getFormFields = require('../../lib/get-form-fields.js');
 
 const onGetShows = (event) => {
   event.preventDefault();
-  let data = getFormFields(event.target);
-  api.displayShow(data)
+  // let data = getFormFields(event.target);
+  api.displayShow()
     .then(ui.onDisplaySuccess)
     .catch(ui.failure);
 };
@@ -54,10 +54,16 @@ const onAddShow = function (event) {
   .catch(ui.onError);
 };
 
+const addShowHandlers = () => {
+  $('#getShowsButton').on('click', onGetShows);
+
+};
+
 
 
 
 module.exports = {
+addShowHandlers,
 onGetShows,
 onRemoveShow,
 onEditShow,

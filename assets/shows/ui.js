@@ -14,20 +14,26 @@
 //   console.error(response);
 // };
 
-const onDisplaySuccess = function (data) {
-  console.log(data.shows);
-};
+const displayShowsTemplate = require('../templates/show-listing.handlebars');
 
-const onRemoveSuccess = function () {
-  console.log('show was successfully deleted.');
+const onDisplaySuccess = function (data) {
+  let displayShowsHtml = displayShowsTemplate({ shows: data.shows });
+
+  $('.show-log-two').append(displayShowsHtml);
+};
+  // console.log(data.shows);
+  // $('#show-log').text('You have seen ' + data.shows.length + ' shows!');
+
+const onRemoveSuccess = function (date) {
+  console.log('show was successfully deleted.', date);
 };
 
 const onEditSuccess = function () {
   console.log('show was successfully edited');
 };
 
-const onAddSuccess = function () {
-  console.log('Show was successfully added');
+const onAddSuccess = function (data) {
+  console.log('Show was successfully added', data);
 };
 
 module.exports = {
