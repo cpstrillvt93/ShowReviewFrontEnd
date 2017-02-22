@@ -16,8 +16,9 @@ const onGetShows = (event) => {
   event.preventDefault();
   // let data = getFormFields(event.target);
   api.displayShow()
-    .then(ui.onDisplaySuccess)
-    .catch(ui.failure);
+    .then(ui.onDisplaySuccess);
+
+    // .catch(ui.failure);
 
 };
 
@@ -61,17 +62,17 @@ const onAddShow = function (event) {
   .catch(ui.onError);
 };
 
-const addShowHandlers = () => {
-  $('#getShowsButton').on('click', onGetShows);
-  $('#clearShowsButton').on('click', onClearShows);
-
-};
+// const addShowHandlers = () => {
+//   $('#getShowsButton').on('click', onGetShows);
+//   $('#clearShowsButton').on('click', onClearShows);
+//
+// };
 
 
 
 
 module.exports = {
-addShowHandlers,
+// addShowHandlers,
 onGetShows,
 onClearShows,
 onRemoveShow,

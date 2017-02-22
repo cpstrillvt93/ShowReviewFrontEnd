@@ -7,6 +7,9 @@ const indexShow = function () {
   return $.ajax({
     url: config.apiOrigin + '/shows',
     method: 'GET',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    },
   });
 };
 
@@ -14,6 +17,9 @@ const displayShow = function () {
   return $.ajax({
     url: config.apiOrigin + '/shows/',
     method: 'GET',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    },
   });
 };
 
