@@ -43,6 +43,21 @@ const onRemoveShow = function(event){
     onGetShows();
 };
 
+  // const onEditShow = function (event) {
+  //   event.preventDefault();
+  //   console.log(event.target);
+  //   let data = getFormFields(event.target);
+  //   let id = event.target.dataset.id;
+  //   // let date = $(event.target.dataset.date);
+  //
+  //     api.editShow(id, data)
+  //     .then(ui.onEditSuccess)
+  //     .then(onGetShows)
+  //     .catch(ui.onError);
+  //     onGetShows();
+  //
+  // };
+
 const onEditShow = function (event) {
   event.preventDefault();
 

@@ -13,8 +13,10 @@ $(() => {
   $('#removeShowsButton').on('click', showEvents.onRemoveShow);
   $('#remove-show').on('submit', showEvents.onRemoveShow);
   $('.show-log-two').on('click', '.remove-show', showEvents.onRemoveShow);
+  // $('.show-log-two').on('submit', '.edit-show', showEvents.onEditShow);
+
   $('#edit-show').on('submit', showEvents.onEditShow);
-  $('#add-show').on('submit', showEvents.onAddShow);
+  // $('#add-show').on('submit', showEvents.onAddShow);
 
 });
 

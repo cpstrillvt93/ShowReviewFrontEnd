@@ -26,12 +26,13 @@ const onSignInSuccess = () => {
 
 
 const onSignOutSuccess = () => {
-  $('.show-log-two').hide();
+  // $('.show-log-two').hide();
   $('.all-forms').hide();
   $('.hide-sign-up').on('click').show();
   $('.hide-sign-in').on('click').show();
   $('.hide-change-pw').on('click').hide();
   $('.hide-sign-out').on('click').hide();
+  $('.show-log-two').empty();
 };
 
 

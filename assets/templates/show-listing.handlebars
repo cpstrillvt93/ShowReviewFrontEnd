@@ -29,6 +29,9 @@
           <td>{{show.notes}}</td>
           <td>{{show.id}}</td>
             <td><button data-id="{{show.id}}" type="button" name="button" class="remove-show glyphicon glyphicon-remove-sign"></button>
+
+            <td><button data-id="{{show.id}}" data-date="{{show.date}}" data-band="{{show.band}}" data-venue="{{show.venue}}"
+               data-location="{{show.location}}" data-rating="{{show.rating}}" data-notes="{{show.notes}}" type="button" name="button" class="edit-show glyphicon glyphicon-edit"></button>
         </tr>
       </tbody>
     </table>

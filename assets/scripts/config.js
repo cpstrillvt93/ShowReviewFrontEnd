@@ -2,7 +2,7 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://warm-oasis-83666.herokuapp.com'
+    production: 'https://blooming-peak-81871.herokuapp.com/'
     // development: 'http://localhost:4741/',
   },
 };
