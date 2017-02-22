@@ -16,7 +16,7 @@ $(() => {
   // $('.show-log-two').on('submit', '.edit-show', showEvents.onEditShow);
 
   $('#edit-show').on('submit', showEvents.onEditShow);
-  // $('#add-show').on('submit', showEvents.onAddShow);
+  $('#add-show').on('submit', showEvents.onAddShow);
 
 });
 
