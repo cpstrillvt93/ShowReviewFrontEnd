@@ -43,33 +43,33 @@ const onRemoveShow = function(event){
     onGetShows();
 };
 
-  // const onEditShow = function (event) {
-  //   event.preventDefault();
-  //   console.log(event.target);
-  //   let data = getFormFields(event.target);
-  //   let id = event.target.dataset.id;
-  //   // let date = $(event.target.dataset.date);
-  //
-  //     api.editShow(id, data)
-  //     .then(ui.onEditSuccess)
-  //     .then(onGetShows)
-  //     .catch(ui.onError);
-  //     onGetShows();
-  //
-  // };
+  const onEditShow = function (event) {
+    event.preventDefault();
+    console.log(event.target);
+    let data = getFormFields(event.target);
+    let id = event.target.dataset.id;
+    // let date = $(event.target.dataset.date);
+    console.log(data);
+      api.editShow(id, data)
+      .then(ui.onEditSuccess)
+      .then(onGetShows)
+      .catch(ui.onError);
+      onGetShows();
 
-const onEditShow = function (event) {
-  event.preventDefault();
+  };
 
-  // let bookId = $('#delete-book-id').val();
-  // multiple ways to do everything.
-  // However prefer this way.
-
-  let data = getFormFields(event.target);
-  api.editShow(data.show.id, data)
-  .then(ui.onEditSuccess)
-  .catch(ui.onError);
-};
+// const onEditShow = function (event) {
+//   event.preventDefault();
+//
+//   // let bookId = $('#delete-book-id').val();
+//   // multiple ways to do everything.
+//   // However prefer this way.
+//
+//   let data = getFormFields(event.target);
+//   api.editShow(data.show.id, data)
+//   .then(ui.onEditSuccess)
+//   .catch(ui.onError);
+// };
 
 const onAddShow = function (event) {
   event.preventDefault();

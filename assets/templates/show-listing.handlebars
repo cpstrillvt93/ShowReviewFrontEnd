@@ -30,8 +30,19 @@
           <td>{{show.id}}</td>
             <td><button data-id="{{show.id}}" type="button" name="button" class="remove-show glyphicon glyphicon-remove-sign"></button>
 
-            <td><button data-id="{{show.id}}" data-date="{{show.date}}" data-band="{{show.band}}" data-venue="{{show.venue}}"
-               data-location="{{show.location}}" data-rating="{{show.rating}}" data-notes="{{show.notes}}" type="button" name="button" class="edit-show glyphicon glyphicon-edit"></button>
+            <td>
+            <form data-id="{{show.id}}" class="edit-show">
+              <div class="form-group">
+               <input data-id="{{show.id}}" type="text" name="show[date]" placeholder="{{show.date}}">
+               <input data-id="{{show.id}}" type="text" name="show[band]" placeholder="{{show.band}}">
+               <input data-id="{{show.id}}" type="text" name="show[venue]" placeholder="{{show.venue}}">
+               <input data-id="{{show.id}}" type="text" name="show[location]" placeholder="{{show.location}}">
+               <input data-id="{{show.id}}" type="number" name="show[rating]" placeholder="{{show.rating}}">
+               <input data-id="{{show.id}}" type="text" name="show[notes]" placeholder="{{show.notes}}">
+               <button data-id="{{show.id}}" data-date="{{show.date}}" data-band="{{show.band}}" data-venue="{{show.venue}}"
+                data-location="{{show.location}}" data-rating="{{show.rating}}" data-notes="{{show.notes}}" type="submit" name="button" class="edit-show glyphicon glyphicon-edit"></button>
+              </div>
+           </form>
         </tr>
       </tbody>
     </table>
