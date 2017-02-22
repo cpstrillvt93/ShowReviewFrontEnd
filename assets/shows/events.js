@@ -18,6 +18,7 @@ const onGetShows = (event) => {
   api.displayShow()
     .then(ui.onDisplaySuccess)
     .catch(ui.failure);
+
 };
 
 const onClearShows = (event) => {
@@ -36,6 +37,7 @@ const onRemoveShow = function(event){
   api.removeShow(data.show.date)
     .then(ui.onRemoveSuccess)
     .catch(ui.onError);
+    console.log(data);
 };
 
 const onEditShow = function (event) {

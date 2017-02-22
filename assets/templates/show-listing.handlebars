@@ -1,12 +1,37 @@
 {{#each shows as |show|}}
 
-  <h1 data-id="{{show.id}}">
-     <small>Date: {{show.date}}</small>
-    <small>Band: {{show.band}}</small>
-    <small>Venue: {{show.venue}}</small>
-    <small>Location: {{show.location}}</small>
+    <!-- <small>{{show.date}}</small>
+    <small>{{show.band}}</small>
+    <small>{{show.venue}}</small>
+    <small>{{show.location}}</small> -->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Date</th>
+          <th>Band</th>
+          <th>Venue</th>
+          <th>Location</th>
+          <th>Rating</th>
+          <th>Notes</th>
+          <th>id</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <th scope="row" data-id="{{show.id}}"></th>
+          <td>{{show.date}}</td>
+          <td>{{show.band}}</td>
+          <td>{{show.venue}}</td>
+          <td>{{show.location}}</td>
+          <td>{{show.rating}}</td>
+          <td>{{show.notes}}</td>
+          <td>{{show.id}}</td>
+        </tr>
+      </tbody>
+    </table>
   </h1>
-  <div>
+  <!-- <div>
     {{#if show.rating}}
       {{show.rating}}
     {{else}}
@@ -19,6 +44,6 @@
     {{else}}
       No notes.
     {{/if}}
-  </div>
+  </div> -->
 
 {{/each}}
