@@ -10,7 +10,9 @@ $(() => {
   $('.table').hide();
   $('#clearShowsButton').on('click', showEvents.onClearShows);
   $('#getShowsButton').on('click', showEvents.onGetShows);
+  $('#removeShowsButton').on('click', showEvents.onRemoveShow);
   $('#remove-show').on('submit', showEvents.onRemoveShow);
+  $('.show-log-two').on('click', '.remove-show', showEvents.onRemoveShow);
   $('#edit-show').on('submit', showEvents.onEditShow);
   $('#add-show').on('submit', showEvents.onAddShow);
 

@@ -20,6 +20,7 @@
       <tbody>
         <tr>
         <th scope="row" data-id="{{show.id}}"></th>
+
           <td>{{show.date}}</td>
           <td>{{show.band}}</td>
           <td>{{show.venue}}</td>
@@ -27,9 +28,12 @@
           <td>{{show.rating}}</td>
           <td>{{show.notes}}</td>
           <td>{{show.id}}</td>
+            <td><button data-id="{{show.id}}" type="button" name="button" class="remove-show glyphicon glyphicon-remove-sign"></button>
         </tr>
       </tbody>
     </table>
+        <!-- <small><button id="removeShowsButton" data-id="{{show.id}}" class="btn btn-default">Delete Show</button></small> -->
+    </form>
   </h1>
   <!-- <div>
     {{#if show.rating}}
