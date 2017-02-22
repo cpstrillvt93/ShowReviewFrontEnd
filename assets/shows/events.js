@@ -12,8 +12,8 @@ const getFormFields = require('../../lib/get-form-fields.js');
 // beginning with 'on' to denote that it is done when the GET /books
 // button is clicked
 
-const onGetShows = (event) => {
-  event.preventDefault();
+const onGetShows = () => {
+  // event.preventDefault();
   // let data = getFormFields(event.target);
   api.displayShow()
     .then(ui.onDisplaySuccess);
@@ -34,12 +34,13 @@ const onRemoveShow = function(event){
   // multiple ways to do everything.
   // However prefer this way.
 
-  let data = getFormFields(event.target.id);
+  // let data = getFormFields(event.target.id);
   let id = event.target.dataset.id;
   api.removeShow(id)
     .then(ui.onRemoveSuccess)
+    .then(onGetShows)
     .catch(ui.onError);
-    console.log(data);
+    onGetShows();
 };
 
 const onEditShow = function (event) {
@@ -60,7 +61,9 @@ const onAddShow = function (event) {
   let data = getFormFields(event.target);
   api.addShow(data)
   .then(ui.onAddSuccess)
+  .then(onGetShows)
   .catch(ui.onError);
+  onGetShows();
 };
 
 // const addShowHandlers = () => {
