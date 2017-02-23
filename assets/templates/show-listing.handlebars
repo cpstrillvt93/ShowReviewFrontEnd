@@ -30,7 +30,10 @@
           <td>{{show.id}}</td>
             <td><button data-id="{{show.id}}" type="button" name="button" class="remove-show glyphicon glyphicon-remove-sign"></button>
 
-            <td>
+          <li data-id="{{show.id}}" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>edit</b></a>
+            <ul class="dropdown-menu">
+              <li>
             <form data-id="{{show.id}}" class="edit-show">
               <div class="form-group">
                <input data-id="{{show.id}}" type="text" name="show[date]" placeholder="{{show.date}}">
