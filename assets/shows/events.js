@@ -54,6 +54,7 @@ const onRemoveShow = function(event){
       .then(ui.onEditSuccess)
       .then(onGetShows)
       .catch(ui.onError);
+      ui.clearShows();
       onGetShows();
 
   };
