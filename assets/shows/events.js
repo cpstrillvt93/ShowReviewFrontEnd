@@ -45,11 +45,11 @@ const onRemoveShow = function(event){
 
   const onEditShow = function (event) {
     event.preventDefault();
-    console.log(event.target);
+    // console.log(event.target);
     let data = getFormFields(event.target);
     let id = event.target.dataset.id;
     // let date = $(event.target.dataset.date);
-    console.log(data);
+    // console.log(data);
       api.editShow(id, data)
       .then(ui.onEditSuccess)
       .then(onGetShows)
