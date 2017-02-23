@@ -2,7 +2,7 @@
 // const game = require('../scripts/game-logic');
 
 const onSignUpSuccess = () => {
-    $('.hide-sign-up').on('click').hide();
+    $('#sign-up').on('click').hide();
   // $('.hide-sign-in').on('click').hide();
   // $('.hide-change-pw').on('click').show();
   // $('.hide-sign-out').on('click').show();
@@ -14,10 +14,10 @@ const onSignUpSuccess = () => {
 const onSignInSuccess = () => {
   $('.show-log-two').show();
   $('.all-forms').show();
-  $('.hide-sign-in').on('click').hide();
-  $('.hide-sign-up').on('click').hide();
-  $('.hide-change-pw').on('click').show();
-  $('.hide-sign-out').on('click').show();
+  $('#sign-in').on('click').hide();
+  $('#sign-up').on('click').hide();
+  $('#change-password').on('click').show();
+  $('#sign-out').show();
 };
 
 // const showGameSuccess = (data) => {
@@ -28,10 +28,10 @@ const onSignInSuccess = () => {
 const onSignOutSuccess = () => {
   // $('.show-log-two').hide();
   $('.all-forms').hide();
-  $('.hide-sign-up').on('click').show();
-  $('.hide-sign-in').on('click').show();
-  $('.hide-change-pw').on('click').hide();
-  $('.hide-sign-out').on('click').hide();
+  $('#sign-up').on('click').show();
+  $('#sign-in').on('click').show();
+  $('#change-password').on('click').hide();
+  $('#sign-out').on('click').hide();
   $('.show-log-two').empty();
 };
 

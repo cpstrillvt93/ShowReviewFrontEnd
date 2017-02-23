@@ -4,12 +4,10 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 $dark-green: #236167;
 $light-green: #2c8d3d;
 $purpleish: #68979b;
-
-$main-background-color: $dark-green;
-$secondary-background: $light-green;
-$font-color: $purpleish;
+$idk: #f6f6f6;
 
 body {
-  background-color: $main-background-color;
+  background: linear-gradient(100deg, $idk, $purpleish  100%);
+  color: black;
 
 }
