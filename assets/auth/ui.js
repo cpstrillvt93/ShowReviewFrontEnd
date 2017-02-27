@@ -14,7 +14,7 @@ const onSignUpSuccess = () => {
 };
 
 const onSignUpFailure = () => {
-  $('#sumome-smartbar-popup').text('Try Again');
+  $('#sumome-smartbar-popup').text('User email might ');
 };
 
 const onSignInSuccess = () => {

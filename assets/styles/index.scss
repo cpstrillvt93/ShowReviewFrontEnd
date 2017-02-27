@@ -12,9 +12,21 @@ body {
 
 }
 
-tr {
-  width: 80%;
+thead {
+  max-width: 50px;
+  word-wrap: break-word;
 }
+
+th {
+  max-width: 50px;
+  word-wrap: break-word;
+}
+
+td {
+  max-width: 50px;
+  word-wrap: break-word;
+}
+
 
 .sumome-smartbar-popup {
   color: $light-green;

@@ -8,7 +8,7 @@ const onDisplaySuccess = function (data) {
   let displayShowsHtml = displayShowsTemplate({ shows: data.shows });
   if (data.shows.length >= 0){
     $('.log').text("You have " + data.shows.length + " shows");
-    console.log(data);
+    // console.log(data);
     $('.log').show();
     $('.show-log-two').empty().append(displayShowsHtml);
 } else {
