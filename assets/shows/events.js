@@ -17,8 +17,7 @@ const onGetShows = () => {
   // let data = getFormFields(event.target);
   api.displayShow()
     .then(ui.onDisplaySuccess);
-
-    // .catch(ui.failure);
+    // .catch(ui.onDisplayFailure);
 
 };
 
@@ -53,7 +52,7 @@ const onRemoveShow = function(event){
       api.editShow(id, data)
       .then(ui.onEditSuccess)
       .then(onGetShows)
-      .catch(ui.onError);
+      .catch(ui.onEditError);
       ui.clearShows();
       onGetShows();
 
@@ -78,7 +77,7 @@ const onAddShow = function (event) {
   api.addShow(data)
   .then(ui.onAddSuccess)
   .then(onGetShows)
-  .catch(ui.onError);
+  .catch(ui.onAddError);
   onGetShows();
 };
 

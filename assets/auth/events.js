@@ -10,12 +10,12 @@ const onSignUp = function (event) {
   event.preventDefault();
 
   let data = getFormFields(event.target);
-
+    // $('#sumome-smartbar-popup').text('Success');
   api.signUp(data)
     .then(ui.onSignUpSuccess)
-    // .catch(ui.failure);
+    .catch(ui.onSignUpFailure);
+    // $('#sumome-smartbar-popup').text('please try again');
     // console.log('signed up')
-    ;
 
 };
 
@@ -30,6 +30,7 @@ const onSignIn = function (event) {
       return store;
     })
     .then(ui.onSignInSuccess)
+    .catch(ui.onSignInFailure)
     // .then(() => {
     //   console.log(store);
     // })
@@ -43,8 +44,8 @@ const onChangePassword = function (event) {
   let data = getFormFields(event.target);
 
   api.changePassword(data)
-  .then(ui.success)
-  // .catch(ui.failure)
+  .then(ui.onChangePasswordSuccess)
+  .catch(ui.onChangePasswordFailure)
   ;
 };
 
