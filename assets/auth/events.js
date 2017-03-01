@@ -79,6 +79,7 @@ const addHandlers = () => {
   $('#sign-in').on('submit', onSignIn);
   $('#change-password').on('submit', onChangePassword);
   $('#sign-out').on('submit', onSignOut);
+  $('#sumome-smartbar-popup').show();
   // $('#show-games').on('click', onShowGame);
   // $('#start').on('click', game.resetBoard);
 

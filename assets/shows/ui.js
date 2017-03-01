@@ -25,28 +25,32 @@ const clearShows = () => {
   };
 
 const onRemoveSuccess = function () {
-  $('.add-show-log').text("Show successfully removed");
+  $('.add-show-log').text("Show successfully removed").delay(1000).hide(1000);
+  $('.add-show-log').show();
   // console.log('show was successfully deleted.', data);
 };
 
 const onEditSuccess = function () {
-  $('.add-show-log').text("Show successfully edited");
+  $('.add-show-log').text("Show successfully edited").delay(1000).hide(1000);
+  $('.add-show-log').show();
   // console.log('show was successfully edited');
 };
 
 const onEditError = function () {
-  $('.add-show-log').text("Show info not changed. Please make sure to fill out all the fields");
-
+  $('.add-show-log').text("Show info not changed. Please make sure to fill out all the fields").delay(1000).hide(1000);
+  $('.add-show-log').show();
 };
 
 const onAddSuccess = function () {
-  $('.add-show-log').text("Show successfully added");
+  $('.add-show-log').text("Show successfully added").delay(1000).hide(1000);
   $('.form-clear').val('');
+  $('.add-show-log').show();
   // console.log('Show was successfully added', data);
 };
 
 const onAddError = function () {
-  $('.add-show-log').text("Show not added. Please make sure to fill out all the fields");
+  $('.add-show-log').text("Show not added. Please make sure to fill out all the fields").delay(1000).hide(1000);
+  $('.add-show-log').show();
 
 
 };
