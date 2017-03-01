@@ -14,7 +14,7 @@ const onDisplaySuccess = function (data) {
 } else {
     $('.show-log-two').empty().append(displayShowsHtml);
     $('.log').val('');
-}
+  }
 };
 
 

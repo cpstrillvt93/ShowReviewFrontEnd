@@ -9,14 +9,23 @@ $idk: #f6f6f6;
 body {
 
 
-background: #4B79A1; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+background: #2C3E50; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2C3E50 , #4CA1AF); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2C3E50 , #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  // background: white; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to left, #616161 , #9bc5c3); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to left, #616161 , #9bc5c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  //
   // background: linear-gradient(100deg, $idk, $purpleish  100%);
-  color: black;
+  // color: black;
 
 }
+
 h1 {
 	// background: #000;
 	// background-image:
@@ -45,12 +54,52 @@ p {
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 1rem;
+  text-shadow: 0 0 30px rgba(50,205,50,0.6),
+    0 0 60px rgba(50,205,50,0.4),
+    0 0 100px rgba(50,205,50,0.2),
+    0 0 90px rgba(50,205,50,0.1);
+
+}
+
+.btn-group {
+  float: right;
+  padding: 50px;
+}
+
+.log {
+  font-family: Neon80sRegular, Arial Narrow, sans-serif;
+  color: #fee;
+  float: clear;
+  font-size: 2rem;
+  text-align: center;
   text-shadow: 0 0 30px rgba(255,0,84,0.6),
     0 0 60px rgba(255,0,84,0.4),
     0 0 100px rgba(255,0,84,0.2),
     0 0 90px rgba(255,0,84,0.1);
+}
+
+.add-show-log {
+  font-family: Neon80sRegular, Arial Narrow, sans-serif;
+  color: #fee;
+  float: clear;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 0 30px rgba(255,0,84,0.6),
+    0 0 60px rgba(255,0,84,0.4),
+    0 0 100px rgba(255,0,84,0.2),
+    0 0 90px rgba(255,0,84,0.1);
+}
+
+.table {
+  font-size: 2rem;
+  font-family: Neon80sRegular, Arial Narrow, sans-serif;
 
 }
+
+.all-forms {
+  font-family: Neon80sRegular, Arial Narrow, sans-serif;
+}
+
 thead {
   max-width: 50px;
   word-wrap: break-word;
@@ -68,6 +117,12 @@ td {
 
 
 .sumome-smartbar-popup {
-  color: $light-green;
-  font-family: 'Open Sans',sans-serif !important;
+  color: #fee;
+  float: clear;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 0 30px rgba(255,0,84,0.6),
+    0 0 60px rgba(255,0,84,0.4),
+    0 0 100px rgba(255,0,84,0.2),
+    0 0 90px rgba(255,0,84,0.1);
 }

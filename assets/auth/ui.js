@@ -27,7 +27,7 @@ const onSignInSuccess = () => {
   $('#sign-up').on('click').hide();
   $('#change-password').on('click').show();
   $('#sign-out').show();
-  $('#sumome-smartbar-popup').text('Signed in!').delay(100).hide(500);
+  $('#sumome-smartbar-popup').text('Signed in!').delay(1000).hide(1000);
   $('#sumome-smartbar-popup').show();
 };
 
