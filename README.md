@@ -1,14 +1,18 @@
 Show Review Front End
 
-Repos
+Repositories
 
-https://github.com/cpstrillvt93/ShowReviewAPI
+  https://github.com/cpstrillvt93/ShowReviewAPI
 
-https://github.com/cpstrillvt93/ShowReviewFrontEnd
+  https://github.com/cpstrillvt93/ShowReviewFrontEnd
 
-Link to Application
+Link to Web Application
 
-  cpstrillvt93.github.io/ShowReviewFrontEnd/
+  https://cpstrillvt93.github.io/ShowReviewFrontEnd/
+
+Link to Back End Heroku Site
+
+  https://blooming-peak-81871.herokuapp.com/
 
 Wireframes
 
@@ -38,8 +42,8 @@ Development Proccess
 
 Problems Encountered/Unfinished Business
 
-There were, of course, a variety of problems encountered over the development proccess, however most of them were overcome through slow, methodical practices. That said, a variety of initial user stories were not achieved.
+  There were, of course, a variety of problems encountered over the development proccess, however most of them were overcome through slow, methodical practices. That said, a variety of initial user stories were not achieved.
 
-a) I would like to create a way to sort created shows.
+  a) I would like to create a way to sort created shows.
 
-b) I would like to establish a bands table, where the user can review live shows and albums of a band.
+  b) I would like to establish a bands table, where the user can review live shows and albums of a band.
