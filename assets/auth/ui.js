@@ -12,7 +12,7 @@ const onSignUpSuccess = () => {
 };
 
 const onSignUpFailure = () => {
-  $('#sumome-smartbar-popup').text('User email might be already taken. Try again! ').delay(2000).hide(1000);
+  $('#sumome-smartbar-popup').text('User Email May Already be Taken and/or Passwords May Not Match. Try again! ').delay(2000).hide(2000);
   $('#sumome-smartbar-popup').show();
 };
 
@@ -29,7 +29,7 @@ const onSignInSuccess = () => {
 };
 
 const onSignInFailure = () => {
-  $('#sumome-smartbar-popup').text('Try Again').delay(1000).hide(2000);
+  $('#sumome-smartbar-popup').text('Try Again! Password and Email May Not Match. ').delay(1000).hide(2000);
   $('#sumome-smartbar-popup').show();
 
 };
@@ -41,7 +41,7 @@ const onChangePasswordSuccess = () => {
 };
 
 const onChangePasswordFailure = () => {
-  $('#sumome-smartbar-popup').text('Try Again').delay(1000).hide(2000);
+  $('#sumome-smartbar-popup').text('Try Again! Make Sure You Are Using the Correct Orignal Password').delay(1000).hide(2000);
   $('#sumome-smartbar-popup').show();
 };
 
@@ -54,7 +54,7 @@ const onSignOutSuccess = () => {
   $('#change-password').on('click').hide();
   $('#sign-out').on('click').hide();
   $('.show-log-two').empty();
-  $('#sumome-smartbar-popup').text('signed out!').delay(1000).hide(2000);
+  $('#sumome-smartbar-popup').text('Signed out!').delay(1000).hide(2000);
   $('.log').hide();
   $('#sumome-smartbar-popup').show();
 };
